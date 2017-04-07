@@ -6,29 +6,27 @@ $ArticleService = new ArticleService();
 define("HEADER", "Sample main text for everything, you can get here");
 define("SUBHEADER", "Second sample text");
 
+$users_on_page = "5";
+$count = $ArticleService->getCount();
+
+$total = ceil($count[0] / $users_on_page);
+
+if (empty($_GET["p"])) {
+    $_GET["p"] = "1";
+}
+$p = $_GET["p"];
+
+if (!ctype_digit($p) or $p > $total):
+    $p = "1";
+endif;
+
+$first = $p * $users_on_page - $users_on_page;
+$result = $ArticleService->getAll($first, $users_on_page);
+
 include "application/views/header.tpl";
 include "application/views/articles.tpl";
 
-require "application/configs/database.php";
-
-$users_on_page="5";
-$count = $ArticleService->getCount();
-
-$total=ceil($count[0]/$users_on_page);
-
-if(empty($_GET["p"])){$_GET["p"]="1";}
-$p=$_GET["p"];
-
-$p=mysqli_real_escape_string($link,$p);
-if(!ctype_digit($p) or $p>$total):
-    $p="1";
-endif;
-
-$first=$p*$users_on_page-$users_on_page;
-//$result=mysqli_query($link, "select * from articles limit $first, $users_on_page") or die("Ошибка " . mysqli_error($link));
-mysqli_close($link);
-$data=mysqli_fetch_array($ArticleService->getAll($first,$users_on_page));
-while(false) // цикл вывода
+while ($data = mysqli_fetch_array($result)) // цикл вывода
 {
     $POST_ID = $data[0];
     $POST_NAME = $data[1];
@@ -94,13 +92,13 @@ while(false) // цикл вывода
 echo "<hr>
                 <!-- Pager -->
                 <ul class=\"pager\">";
-if ($p!=$total) echo "
+if ($p != $total) echo "
                     <li class=\"next\">
-                        <a href=\"?p=".($p+1)."\">Older Posts &rarr;</a>
+                        <a href=\"?p=" . ($p + 1) . "\">Older Posts &rarr;</a>
                     </li>";
 if ($p > 1) echo "
                     <li class=\"previous\">
-                        <a href=\"?p=".($p-1)."\"> &larr; Newer Posts</a>
+                        <a href=\"?p=" . ($p - 1) . "\"> &larr; Newer Posts</a>
                     </li>";
 echo "                </ul>
                 </div></div></div>";
