@@ -42,7 +42,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.php">Start Bootstrap</a>
+            <a class="navbar-brand" href="index.php">Main</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,13 +52,10 @@
                     <a href="index.php">Home</a>
                 </li>
                 <li>
-                    <a href="about.php">About</a>
+                    <a href="index.php?page=about">About</a>
                 </li>
                 <li>
-                    <a href="post.php">Sample Post</a>
-                </li>
-                <li>
-                    <a href="contact.php">Contact</a>
+                    <a href="index.php?page=contact">Contact</a>
                 </li>
             </ul>
         </div>
