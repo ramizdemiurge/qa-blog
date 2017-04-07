@@ -1,6 +1,6 @@
 <?php
 
-class ArticleService extends Article
+class ArticleService
 {
     function ArticleService()
     {
