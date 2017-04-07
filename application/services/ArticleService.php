@@ -2,6 +2,11 @@
 
 class ArticleService extends Article
 {
+    function ArticleService()
+    {
+        require "application/models/DB_connect.php";
+    }
+
     function addArticle($Article)
     {
         //$Article = new Article();
@@ -40,18 +45,20 @@ class ArticleService extends Article
 
     function getAll($first, $users_on_page)
     {
-        require "application/configs/database.php";
-        $result = mysqli_query($link, "select * from articles limit $first, $users_on_page") or die("Ошибка " . mysqli_error($link));
-        mysqli_close($link);
+        $DB_connect = new DB_connect();
+        $mysqli = $DB_connect->getMysqli();
+        $result = $mysqli->query("select * from articles limit $first, $users_on_page");
+        $mysqli->close();
         return $result;
     }
 
     function getCount()
     {
-        require "application/configs/database.php";
-        $result = mysqli_query($link, "select count(id) from articles") or die("Ошибка " . mysqli_error($link));
-        $count = mysqli_fetch_array($result, MYSQLI_BOTH);
-        mysqli_close($link);
+        $DB_connect = new DB_connect();
+        $mysqli = $DB_connect->getMysqli();
+        $result = $mysqli->query("select count(id) from articles") or die("Ошибка getCount");
+        $count = $result->fetch_array(MYSQLI_BOTH);
+        $mysqli->close();
         return $count;
     }
 }
