@@ -1,6 +1,8 @@
 <?php
+
 require "application/models/entity/Article.php";
 require "application/services/ArticleService.php";
+
 $ArticleService = new ArticleService();
 
 define("HEADER", "Sample main text for everything, you can get here");
