@@ -20,10 +20,12 @@ class ArticleService
 
     function getById($id)
     {
-        require "application/configs/database.php";
-        $query = "SELECT * FROM articles WHERE id=\"" . $id . "\"";
-        $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        $DB_connect = new DB_connect();
+        $MySQLi = $DB_connect->getMysqli();
+        $result = $MySQLi->query("SELECT * FROM articles WHERE id=\"" . $id . "\"") or die("Ошибка getById");
+        $row = $result->fetch_array(MYSQLI_ASSOC);
+        $MySQLi->close();
+
         $Article = new Article();
         if ($result) {
             $Article->setId($row['id']);
@@ -33,7 +35,6 @@ class ArticleService
             $Article->setText($row['text']);
             $Article->setQuestion($row['lead_text']);
         }
-        mysqli_close($link);
         return $Article;
     }
 

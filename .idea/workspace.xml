@@ -106,22 +106,14 @@
       <file leaf-file-name="ArticleService.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/services/ArticleService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="529">
+              <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
               <folding>
-                <marker date="1491584674498" expanded="true" signature="398:430" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="398:431" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="398:435" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="398:439" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="398:441" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="398:444" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="398:445" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="398:446" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="398:501" ph="SELECT * FRO... articles" />
-                <marker date="1491584674498" expanded="true" signature="1279:1316" ph="select * fro... articles" />
-                <marker date="1491584674498" expanded="true" signature="1279:1333" ph="select * fro... articles" />
-                <marker date="1491584674498" expanded="true" signature="1539:1546" ph="select * fro... articles" />
-                <marker date="1491584674498" expanded="true" signature="1539:1569" ph="select count... articles" />
+                <marker date="1491585195228" expanded="true" signature="446:493" ph="SELECT * FRO... articles" />
+                <marker date="1491585195228" expanded="true" signature="1257:1294" ph="select * fro... articles" />
+                <marker date="1491585195228" expanded="true" signature="1257:1311" ph="select * fro... articles" />
+                <marker date="1491585195228" expanded="true" signature="1517:1524" ph="select * fro... articles" />
+                <marker date="1491585195228" expanded="true" signature="1517:1547" ph="select count... articles" />
               </folding>
             </state>
           </provider>
@@ -818,7 +810,7 @@
       <workItem from="1491065829116" duration="13979000" />
       <workItem from="1491155727253" duration="10287000" />
       <workItem from="1491564962748" duration="12550000" />
-      <workItem from="1491581322207" duration="3365000" />
+      <workItem from="1491581322207" duration="3872000" />
     </task>
     <task id="LOCAL-00001" summary="Upd">
       <created>1491581685115</created>
@@ -855,11 +847,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491584537992</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix">
+      <created>1491584695826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1491584695826</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40262000" />
+    <option name="totallyTimeSpent" value="40769000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -916,7 +915,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Upd" />
     <MESSAGE value="Using OOP mysqli" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using OOP mysqli" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1000,19 +1000,11 @@
         <state relative-caret-position="450">
           <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
-            <marker date="1491584674498" expanded="true" signature="398:430" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:431" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:435" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:439" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:441" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:444" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:445" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:446" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:501" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="1279:1316" ph="select * fro... articles" />
-            <marker date="1491584674498" expanded="true" signature="1279:1333" ph="select * fro... articles" />
-            <marker date="1491584674498" expanded="true" signature="1539:1546" ph="select * fro... articles" />
-            <marker date="1491584674498" expanded="true" signature="1539:1569" ph="select count... articles" />
+            <marker date="1491585195228" expanded="true" signature="446:493" ph="SELECT * FRO... articles" />
+            <marker date="1491585195228" expanded="true" signature="1257:1294" ph="select * fro... articles" />
+            <marker date="1491585195228" expanded="true" signature="1257:1311" ph="select * fro... articles" />
+            <marker date="1491585195228" expanded="true" signature="1517:1524" ph="select * fro... articles" />
+            <marker date="1491585195228" expanded="true" signature="1517:1547" ph="select count... articles" />
           </folding>
         </state>
       </provider>
@@ -1313,22 +1305,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/services/ArticleService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="529">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
           <folding>
-            <marker date="1491584674498" expanded="true" signature="398:430" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:431" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:435" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:439" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:441" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:444" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:445" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:446" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="398:501" ph="SELECT * FRO... articles" />
-            <marker date="1491584674498" expanded="true" signature="1279:1316" ph="select * fro... articles" />
-            <marker date="1491584674498" expanded="true" signature="1279:1333" ph="select * fro... articles" />
-            <marker date="1491584674498" expanded="true" signature="1539:1546" ph="select * fro... articles" />
-            <marker date="1491584674498" expanded="true" signature="1539:1569" ph="select count... articles" />
+            <marker date="1491585195228" expanded="true" signature="446:493" ph="SELECT * FRO... articles" />
+            <marker date="1491585195228" expanded="true" signature="1257:1294" ph="select * fro... articles" />
+            <marker date="1491585195228" expanded="true" signature="1257:1311" ph="select * fro... articles" />
+            <marker date="1491585195228" expanded="true" signature="1517:1524" ph="select * fro... articles" />
+            <marker date="1491585195228" expanded="true" signature="1517:1547" ph="select count... articles" />
           </folding>
         </state>
       </provider>
