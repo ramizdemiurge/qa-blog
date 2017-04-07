@@ -1,5 +1,4 @@
 <?php
-//require_once "application/configs/database.php";
 
 require "application/models/entity/Article.php";
 require "application/services/ArticleService.php";
